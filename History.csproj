@@ -7,8 +7,8 @@
     <ProjectGuid>{51F0D0D0-8030-4CC5-AA9B-3C81BB3393A9}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Born</RootNamespace>
-    <AssemblyName>Born</AssemblyName>
+    <RootNamespace>History</RootNamespace>
+    <AssemblyName>History</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,8 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DBEnum">
-      <HintPath>..\TestApplication\bin\Debug\DBEnum.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>Library\DBEnum.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
