@@ -1,0 +1,46 @@
+# Ignore list
+#*\*.suo
+#*\*.user
+
+*\bin
+*\obj
+**\FileListAbsolute.txt
+Deploy/**/*.xml
+*\Debug
+*\Release
+*\TestTools
+
+TestResults
+/SetupNetworkManager/SetupNetworkManager
+/SetupRetiSAC/SetupRetiSAC
+/SetupGDFTools/SetupGDFTools
+/SetupSMSServer/SetupSMSServer
+/SetupGDF/SetupGDF
+/SetupGPSTrackerService/SetupGPSTrackerService
+*.msi
+*.exe
+
+/SmartLogTerminal/RetiAMMNet GdF/Output
+/SACRTService/obj
+/SACRTService/bin
+Deploy/
+
+!packages/**/*.dll
+!Library/*.dll
+*.suo
+/UDPSender/obj
+/UDPSender/bin
+
+SAC_BuildSteps_Errorlog.log
+SAC_BuildSteps_Msbuildlog.log
+ObfFlag.txt
+/SACObjects.Common/SACObjects.Common.csproj.user
+/NMSObjects.Common/NMSObjects.Common.csproj.user
+/NMSService.BLL/NMSService.BLL.csproj.user
+/SACObjects.DAL/SACObjects.DAL.csproj.user
+/SACRTService.BLL/SACRTService.BLL.csproj.user
+/SACService.DSL/SACService.DSL.csproj.user
+.vs/RetiSAC - Without Setup/v15/Server/sqlite3/storage.ide-shm
+.vs/RetiSAC - Without Setup/v15/Server/sqlite3/db.lock
+.vs/RetiSAC - Without Setup/v15/Server/sqlite3/storage.ide
+.vs/RetiSAC - Without Setup/v15/Server/sqlite3/storage.ide-wal
