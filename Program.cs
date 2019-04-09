@@ -133,11 +133,12 @@ namespace History
             public Zannerini(string name, Sex sex, DateTime bornDate, bool isBornDateExact) : base(name, sex, bornDate, isBornDateExact) {
             }
 
-            public Zannerini Join(Person inputPerson, DateTime joinDate, string outputPersonName, Sex outputPersonSex)
+            public Zannerini Join(Person inputPerson, DateTime joinDate, string outputPersonName, Sex outputPersonSex, bool isBornDateExact, DateTime? bornDate = null)
             {
                 Console.WriteLine("{0} and {1} are proud to announce the world...", this.Name, inputPerson.Name);
                 Suspancer();
-                return new Zannerini(outputPersonName, outputPersonSex, joinDate.AddMonths(9).AddDays(new Random(DateTime.Now.Millisecond).Next(-7, +7)), false);
+                bornDate = isBornDateExact ? bornDate : joinDate.AddMonths(9).AddDays(new Random(DateTime.Now.Millisecond).Next(-7, +7));
+                return new Zannerini(outputPersonName, outputPersonSex, bornDate.Value, isBornDateExact);
             }
         }
 
@@ -157,9 +158,9 @@ namespace History
 
             Suspancer();
 
-            var mySon = gabriele.Join(sabrina, new DateTime(2018, 5, 25), "ToBeDefinedYet", Sex.BabyBoy);
+            var mySon = gabriele.Join(sabrina, new DateTime(2018, 5, 25), "Leonardo", Sex.BabyBoy, true, new DateTime(2019, 2, 20, 19, 39, 0));
             Console.WriteLine(mySon);
-
+            
             Suspancer();
 
             Console.WriteLine(string.Format(Environment.NewLine + "...That's all folks (updated to version {0})...", Assembly.GetExecutingAssembly().GetName().Version));
